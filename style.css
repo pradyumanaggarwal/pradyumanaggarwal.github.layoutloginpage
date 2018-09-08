@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* these are 0 so to make use of full browser */
+    background: url(bgimage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width:100vh;
+    /* vh is very important so bg image varies its measures according to size of browser */
+    background-repeat: no-repeat;
+    /* bg image dont repeat */
+    background-attachment: fixed;
+    /* so that the background image remain fixed and dont change with the scrolling */
+}
+
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    /* after describing these three features we are able to see a box */
+    top: 50%;
+    left: 50%;
+    /* they are for positioning of box */
+    position: absolute;
+    /* always use this style attribute so that above use top and left get executed */
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding-left: 2ch;
+    padding-right:2ch; 
+    font-weight: bold;
+    font-style: sans-serif;
+
+}
+.avtar{
+    width: 100px;
+    height: 100px;
+    left: 111px;
+    top: -50px;
+    position: absolute;
+    border-radius: 50px;
+    /* this is for curving border edges */
+
+}
+h1{
+    color: aliceblue;
+    margin: 0;
+    padding-top:70px;
+    /* this is for positioning */
+    text-align: center;
+    font-size: 22px;
+    
+
+}
+p{
+    color: aliceblue;
+    font-style: sans-serif;
+}
+
+.loginbox input{
+    width: 100%;
+
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    /* although class is only loginbox but use as this to style input boxes  */
+    border:0px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    /* very awesome styling option */
+    outline: none;
+    height: 30px;
+    color: azure;
+    font-size: 15px;
+}
+
+.loginbox input[type="submit"]{
+    margin: 3ch;
+    margin-left: 1.5ch;
+    width: 90%;
+    background-color: red;
+    border: 0px;
+    height: 4ch;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+
+
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+
+}
